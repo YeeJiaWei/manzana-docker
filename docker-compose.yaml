@@ -1,0 +1,10 @@
+services:
+    manzana:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        image: manzana
+        volumes:
+          - './manzana:/app'
+          - './output:/app/output'
+          - './device:/app/device'
